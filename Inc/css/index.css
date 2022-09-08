@@ -1,0 +1,754 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 7vh;
+  padding: 0 100px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.99);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 45px;
+}
+
+nav ul li a {
+  color: #dad8d8;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ion-icon {
+  color: #dad8d8;
+  cursor: pointer;
+}
+
+#searchBar {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#searchBar .flex-item {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#searchBar ion-icon {
+  margin-top: 20px;
+  color: #dad8d8;
+  cursor: pointer;
+}
+
+#searchBar form {
+  width: 45%;
+}
+
+#searchBar form input {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#searchBar #closeSearch {
+  cursor: pointer;
+  color: #dad8d8;
+  margin-top: 15px;
+}
+
+.show {
+  display: block !important;
+}
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  padding: 0 180px;
+  cursor: pointer;
+  background: #fbfbfd;
+}
+
+.banner .banner-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.banner .banner-item .hero {
+  width: 30px;
+}
+
+.banner .banner-item .title {
+  font-size: 55px;
+  font-weight: 500;
+  margin-top: -100px;
+}
+
+.banner .banner-item .super-fast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-item .super-fast .info {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.banner .banner-item .subtitle {
+  color: #86868b;
+  margin: 15px 0;
+}
+
+.banner .banner-item .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+}
+
+.banner .banner-item .learn-more:hover {
+  text-decoration: underline;
+}
+
+.banner .banner-hero .ban {
+  width: 500px;
+}
+
+.macbook-pro {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: black;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.macbook-pro .child {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.macbook-pro .laptop {
+  width: 1200px;
+}
+
+.macbook-pro .title {
+  font-size: 55px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.macbook-pro .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 20px 0;
+}
+
+.macbook-pro .learn-more:hover {
+  text-decoration: underline;
+}
+
+.iphone {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fbfbfd;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.iphone .info {
+  margin-bottom: 10px;
+}
+
+.iphone .phone {
+  width: 1200px;
+}
+
+.iphone .title {
+  font-size: 55px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.iphone .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 20px 0;
+}
+
+.iphone .learn-more:hover {
+  text-decoration: underline;
+}
+
+.air-pro {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.air-pro .container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.air-pro .container .ipad-air {
+  width: 49%;
+  height: 100%;
+  color: white;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.air-pro .container .ipad-air .hero {
+  width: 350px;
+  height: 400px;
+}
+
+.air-pro .container .ipad-air .air {
+  width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.air-pro .container .ipad-air .air .intro {
+  font-size: 45px;
+}
+
+.air-pro .container .ipad-air .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.air-pro .container .ipad-air .learn-more:hover {
+  text-decoration: underline;
+}
+
+.air-pro .container .iphone-pro {
+  width: 49%;
+  height: 100%;
+  background: #fbfbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.air-pro .container .iphone-pro img {
+  width: 240px;
+  height: 370px;
+}
+
+.air-pro .container .iphone-pro .intro {
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.air-pro .container .iphone-pro .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.air-pro .container .iphone-pro .learn-more:hover {
+  text-decoration: underline;
+}
+
+.mini-new {
+  width: 100%;
+  height: 90vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mini-new .mini {
+  width: 49%;
+  height: 100%;
+  background: #fbfbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mini-new .mini .hero {
+  width: 320px;
+  height: 400px;
+}
+
+.mini-new .mini .mini-flex {
+  width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.mini-new .mini .mini-flex .intro {
+  font-size: 45px;
+}
+
+.mini-new .mini .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.mini-new .mini .learn-more:hover {
+  text-decoration: underline;
+}
+
+.mini-new .se {
+  width: 49%;
+  height: 100%;
+  background: #fbfbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mini-new .se .hero {
+  width: 500px;
+  height: 400px;
+}
+
+.mini-new .se .intro {
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.mini-new .se .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.mini-new .se .learn-more:hover {
+  text-decoration: underline;
+}
+
+.air-tag {
+  width: 100%;
+  height: 90vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.air-tag .pods {
+  width: 49%;
+  height: 100%;
+  background: #fbfbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.air-tag .pods img {
+  width: 330px;
+}
+
+.air-tag .pods .title {
+  padding-top: 10px;
+  font-size: 45px;
+}
+
+.air-tag .pods .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.air-tag .pods .learn-more:hover {
+  text-decoration: underline;
+}
+
+.air-tag .tags {
+  width: 49%;
+  height: 100%;
+  background: #fbfbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.air-tag .tags img {
+  width: 280px;
+}
+
+.air-tag .tags .title {
+  padding-top: 10px;
+  font-size: 45px;
+}
+
+.air-tag .tags .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #06c;
+  margin: 10px 0;
+}
+
+.air-tag .tags .learn-more:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  background: #fbfbfd;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+footer .links {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .links ul li {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .links ul li a {
+  text-decoration: none;
+  margin: 3px 0;
+  color: black;
+}
+
+footer .links ul li .active {
+  font-weight: 500;
+}
+
+footer .retail {
+  margin: 30px 0 0 90px;
+}
+
+footer .buy {
+  color: #06c;
+  text-decoration: none;
+}
+
+footer hr {
+  margin: 10px 60px 0 90px;
+}
+
+footer .copy {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 0px 0 90px;
+}
+
+footer .copy .terms {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+footer .copy .country {
+  margin-right: 60px;
+}
+/*# sourceMappingURL=index.css.map */

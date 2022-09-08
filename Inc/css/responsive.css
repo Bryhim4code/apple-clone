@@ -1,0 +1,215 @@
+@media (max-width: 375px) {
+  nav {
+    display: none;
+  }
+  .banner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  .banner .banner-item {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner .banner-item .ban {
+    width: 250px;
+    margin-top: 10px;
+  }
+  .banner .banner-item .banner-text {
+    margin-top: 150px;
+  }
+  .banner .banner-item .banner-text .title {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .macbook-pro {
+    padding: 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .macbook-pro .title {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .macbook-pro .laptop {
+    width: 370px;
+    height: 200px;
+    margin-top: 30px;
+  }
+  .macbook-pro .learn-more {
+    margin: -15px 0 10px 0;
+  }
+  .iphone {
+    padding: 20px;
+  }
+  .iphone .title {
+    font-size: 35px;
+  }
+  .iphone .phone {
+    width: 350px;
+    height: 170px;
+  }
+  .air-pro {
+    padding: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .air-pro .container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .air-pro .container .ipad-air {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .air-pro .container .ipad-air .hero {
+    width: 300px;
+    height: 360px;
+  }
+  .air-pro .container .ipad-air .air .intro {
+    font-size: 35px;
+  }
+  .air-pro .container .ipad-air .air .pad {
+    width: 80px;
+  }
+  .air-pro .container .iphone-pro {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .air-pro .container .iphone-pro .intro {
+    font-size: 30px;
+  }
+  .air-pro .container .iphone-pro .pro-phone {
+    height: 300px;
+  }
+  .mini-new {
+    padding: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mini-new .mini {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mini-new .mini .mini-flex .intro {
+    font-size: 35px;
+  }
+  .mini-new .mini .mini-flex .pad-icon {
+    width: 80px;
+  }
+  .mini-new .mini .hero {
+    width: 290px;
+    height: 380px;
+  }
+  .mini-new .se {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mini-new .se .intro {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  .mini-new .se .hero {
+    width: 350px;
+    height: 280px;
+  }
+  .mini-new .se .mini-flex img {
+    width: 150px;
+  }
+  .air-tag {
+    padding: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .air-tag .pods {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .air-tag .pods img {
+    width: 300px;
+  }
+  .air-tag .pods .title {
+    font-size: 35px;
+  }
+  .air-tag .tags {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .air-tag .tags img {
+    width: 220px;
+  }
+  .air-tag .tags .title {
+    font-size: 35px;
+    padding-top: 2px;
+  }
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .links ul {
+    margin-left: 20px;
+  }
+  footer .links .active {
+    margin: 10px 0 0 0;
+  }
+  footer .retail {
+    margin: 30px 0 0 20px;
+  }
+  footer hr {
+    margin: 10px 60px 0 20px;
+  }
+  footer .copy {
+    text-align: center;
+    padding: 5px 0px 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .copy .terms {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

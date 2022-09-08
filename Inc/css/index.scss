@@ -1,0 +1,545 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+nav{
+    width: 100%;
+    height: 7vh;
+    padding: 0 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.99);
+
+    ul li{
+        display: inline-block;
+        padding: 45px;
+
+        a{
+            color: rgb(218, 216, 216);
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: #fff;
+            transition: .5s;
+        }
+    }
+
+    ion-icon{
+        color: rgb(218, 216, 216);
+        cursor: pointer;
+    }
+}
+// searchBar
+#searchBar{
+    width: 100%;
+    height: 100vh;
+    // background: rgba(0,0,0,0.48);
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+
+    .flex-item{
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ion-icon{
+        margin-top: 20px;
+        color: rgb(218, 216, 216);
+        cursor: pointer;
+    }
+
+    form{
+        width: 45%;
+        input{
+            width: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+            padding-left: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+        }
+    }
+
+    #closeSearch{
+        cursor: pointer;
+        color: rgb(218, 216, 216);
+        margin-top: 15px;
+    }
+}
+
+.show{
+    display: block !important;
+}
+
+//banner 
+.banner{
+    width: 100%;
+    height: 90vh;
+    padding: 0 180px;
+    cursor: pointer;
+    background: #fbfbfd;
+    
+    .banner-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        .hero{
+            width: 30px; 
+        }
+
+        .title{
+            font-size: 55px;
+            font-weight: 500;
+            margin-top: -100px;
+        }
+
+        .super-fast{
+            display: flex;
+            justify-content: center;
+
+            .info{
+                font-size: 25px;
+                padding-right: 10px;
+            }
+
+        }
+
+        .subtitle{
+            color: #86868b;
+            margin: 15px 0;
+        }
+
+        .learn-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #06c;
+        }
+
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .banner-hero{
+         .ban{
+            width: 500px; 
+        }
+    }
+}
+
+// macbook pro 13
+.macbook-pro{
+    width: 100%;
+    height: fit-content;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .child{
+        width: 250px;
+        margin-bottom: 20px; 
+    }
+
+    .laptop{
+        width: 1200px;
+    }
+
+    .title{
+        font-size: 55px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+    
+    .learn-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #06c;
+        margin: 20px 0;
+    }
+
+    .learn-more:hover{
+        text-decoration: underline;
+    }
+}
+// iphone 13
+.iphone{
+    width: 100%;
+    height: fit-content;
+    background: #fbfbfd;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .info{
+        margin-bottom: 10px; 
+    }
+
+    .phone{
+        width: 1200px;
+    }
+
+    .title{
+        font-size: 55px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+    
+    .learn-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #06c;
+        margin: 20px 0;
+    }
+
+    .learn-more:hover{
+        text-decoration: underline;
+    }
+}
+// ipad-air-pro
+.air-pro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        
+        .ipad-air{
+            width: 49%;
+            height: 100%;
+            color: white;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .hero{
+                width: 350px;
+                height: 400px;
+            }
+            
+            .air{
+                width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
+        
+                .intro{
+                    font-size: 45px;
+                }
+            }
+
+            .learn-more{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #06c;
+                margin: 10px 0;
+            }
+        
+            .learn-more:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .iphone-pro{
+            width: 49%;
+            height: 100%;
+            background: #fbfbfd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img{
+                width: 240px;
+                height: 370px;
+            }
+
+            .intro{
+                padding-top: 20px;
+                font-size: 45px;
+            }
+
+            .learn-more{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #06c;
+                margin: 10px 0;
+            }
+        
+            .learn-more:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// mini-new
+.mini-new{
+    width: 100%;
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .mini{
+        width: 49%;
+        height: 100%;
+        background: #fbfbfd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .hero{
+            width: 320px;
+            height: 400px;
+        }
+        
+        .mini-flex{
+            width: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+    
+            .intro{
+                font-size: 45px;
+            }
+        }
+
+        .learn-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #06c;
+            margin: 10px 0;
+        }
+    
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .se{
+        width: 49%;
+        height: 100%;
+        background: #fbfbfd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .hero{
+            width: 500px;
+            height: 400px;
+        }
+
+        .intro{
+            padding-top: 20px;
+            font-size: 45px;
+        }
+
+        .learn-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #06c;
+            margin: 10px 0;
+        }
+    
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+    }
+}
+// air-tag
+.air-tag{
+    width: 100%;
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pods{
+        width: 49%;
+        height: 100%;
+        background: #fbfbfd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 330px;
+        }
+
+        .title{
+            padding-top: 10px;
+            font-size: 45px;        
+        }
+
+        .learn-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #06c;
+            margin: 10px 0;
+        }
+    
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .tags{
+        width: 49%;
+        height: 100%;
+        background: #fbfbfd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 280px;
+        }
+
+        .title{
+            padding-top: 10px;
+            font-size: 45px;        
+        }
+
+        .learn-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #06c;
+            margin: 10px 0;
+        }
+    
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+    }
+}
+// footer
+footer{
+    width: 100%;
+    background: #fbfbfd;
+    height: fit-content;
+    padding-bottom: 10px;
+
+    .links{
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+
+        ul li{
+            height: fit-content;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+
+            a{
+                text-decoration: none;
+                margin: 3px 0;
+                color: black;
+            }
+            .active{
+                font-weight: 500;
+            }
+        }
+    }
+
+    .retail{
+        margin: 30px 0 0 90px;
+    }
+    
+    .buy{
+        color: #06c;
+        text-decoration: none;
+    }
+
+    hr{
+        margin: 10px 60px 0 90px;
+    }
+
+    .copy{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding: 5px 0px 0 90px;
+
+        .terms{
+            margin-left: 10px;
+            margin-right: auto;
+        }
+
+        .country{
+            margin-right: 60px;
+        }
+    }
+}

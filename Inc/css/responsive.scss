@@ -1,0 +1,221 @@
+@media (max-width: 375px){
+    nav{
+        display: none;
+    }
+    //banner 
+    .banner{
+        height: fit-content;
+        padding: 20px;
+
+        .banner-item{
+            height: fit-content;
+            flex-direction: column;
+
+            .ban{
+                width: 250px;
+                margin-top: 10px;
+            }
+
+            .banner-text{
+                margin-top: 150px;
+
+                .title{
+                    font-size: 35px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    // macbook pro 13
+    .macbook-pro{
+        padding: 10px;
+        height: fit-content;
+
+        .title{
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+        .laptop{
+            width: 370px;
+            height: 200px;
+            margin-top: 30px;
+        }
+
+        .learn-more{
+            margin: -15px 0 10px 0;
+        }
+    }
+    //iphone 13
+    .iphone{
+        padding: 20px;
+        
+        .title{
+            font-size: 35px;
+        }
+        
+        .phone{
+            width: 350px;
+            height: 170px;
+        }
+    }
+    //ipad-air-pro
+    .air-pro{
+        padding: 5px;
+        height: fit-content;
+
+        .container{
+            height: fit-content;
+            flex-direction: column;
+            
+            .ipad-air{
+                width: 100%;
+                height: fit-content;
+                
+                .hero{
+                    width: 300px;
+                    height: 360px;
+                }
+
+                .air{
+                    .intro{
+                        font-size: 35px;
+                    }
+
+                    .pad{
+                        width: 80px;
+                    }
+                }
+            }
+            
+            .iphone-pro{
+                width: 100%;
+                height: fit-content;
+
+                .intro{
+                    font-size: 30px;
+                }
+
+                .pro-phone{
+                    height: 300px;
+                }
+            }
+
+        }
+    }
+    //mini-new
+    .mini-new{
+        padding: 5px;
+        height: fit-content;
+        flex-direction: column;
+
+        .mini{
+            width: 100%;
+            height: fit-content;
+
+            .mini-flex{
+                .intro{
+                    font-size: 35px;
+                }
+
+                .pad-icon{
+                    width: 80px;
+                }
+            }
+
+            .hero{
+                width: 290px;
+                height: 380px;
+            }
+        }
+
+        .se{
+            width: 100%;
+            height: fit-content;
+
+            .intro{
+                padding-top: 20px;
+                font-size: 35px;
+            }
+
+            .hero{
+                width: 350px;
+                height: 280px;
+            }
+
+            .mini-flex{
+                img{
+                    width: 150px;
+                }
+            }
+
+        }
+    }
+    //air-tag
+    .air-tag{
+        padding: 5px;
+        height: fit-content;
+        flex-direction: column;
+
+        .pods{
+            width: 100%;
+            height: fit-content;
+            
+            img{
+                width: 300px;
+            }
+
+            .title{
+                font-size: 35px;
+            }
+        }
+
+        .tags{
+            width: 100%;
+            height: fit-content;
+            
+            img{
+                width: 220px;
+            }
+
+            .title{
+                font-size: 35px;
+                padding-top: 2px;
+            }
+        }
+    }
+    //footer
+    footer{
+        justify-content: center;
+
+        .links{
+            flex-direction: column;
+
+            ul{
+                margin-left: 20px;
+            }
+
+            .active{
+                margin: 10px 0 0 0 ;
+            }
+        }
+
+        .retail{
+            margin: 30px 0 0 20px;
+        }
+
+        hr{
+            margin: 10px 60px 0 20px;
+        }
+
+        .copy{
+            text-align: center;
+            padding: 5px 0px 0 20px;
+            flex-direction: column;
+
+            .terms{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (Nigeria)</title>
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500;600&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- linking ionicon cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/Apple-logo.png" type="image/x-icon">
+    <!-- linking external css style sheet -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="nav">
+        <a href="index.html"><img src="./assets/Apple-logo.png" width="20px" alt="Apple-logo" class="logo"></a>
+        <ul>
+            <li><a href="/mac.html">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Where to Buy</a></li>
+        </ul>
+        <ion-icon name="search-outline" onclick="openSearch()"></ion-icon>
+    </nav>
+    <!-- searchBar -->
+    <div id="searchBar">
+        <div class="flex-item">
+            <ion-icon name="search-outline"></ion-icon>
+            <form>
+                <input type="text" placeholder="Search apple.com">
+            </form>
+            <p id="closeSearch" onclick="closeSearch()">X</p>
+        </div>
+    </div>
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner-item">
+            <div class="banner-text">
+                <p class="title">MacBook Air</p>
+                <div class="super-fast">
+                    <p class="info">Supercharge by </p>
+                    <img src="./assets/m2.PNG"  class="hero">
+                </div>
+                <p class="subtitle">Check back later for availability</p>
+                <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            </div>
+            <div class="banner-hero">
+                <img src="./assets/1.png" class="ban">
+            </div>
+        </div>
+    </section>
+    <!-- 13-pro -->
+    <section class="macbook-pro">
+        <p class="title">MacBook Pro 13"</p>
+        <img src="./assets/fast.png" class="child">
+        <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+        <img src="./assets/2.png" width="1200px" class="laptop">
+    </section>
+    <!-- iphone 13 -->
+    <section class="iphone">
+        <p class="title">iPhone 13</p>
+        <p class="info">Your new superpower.</p>
+        <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+        <img src="./assets/3.png" class="phone">
+    </section>
+    <!--air-pro -->
+    <section class="air-pro">
+        <div class="container">
+            <div class="ipad-air">
+                <div class="air">
+                    <p class="intro">iPad</p>
+                    <img src="./assets/air.png" class="pad">
+                </div>
+                <p class="title">Light. Bright. Full of might.</p>
+                <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                <img src="./assets/4.png" class="hero">
+            </div>
+            <div class="iphone-pro">
+                <p class="intro">iPhone 13 Pro</p>
+                <p class="title">Oh. So. Pro.</p>
+                <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                <img src="./assets/5.png" class="pro-phone">
+            </div>
+        </div>
+    </section>
+    <!-- mini-new -->
+    <section class="mini-new">
+        <div class="mini">
+            <div class="mini-flex">
+                <p class="intro">iPad</p>
+                <img src="./assets/mini.png" class="pad-icon">
+            </div>
+            <p class="title">Mega power. Mini sized</p>                
+            <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <img src="./assets/6.png" class="hero">
+        </div>
+        <div class="se">
+            <p class="intro">The new</p>
+            <div class="mini-flex">
+                <img src="./assets/iphone.png">
+            </div>
+            <p class="title">Love the power. Love the price</p>                
+            <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <img src="./assets/7.png" class="hero">
+        </div>
+    </section>
+    <!-- airtag -->
+    <section class="air-tag">
+        <div class="pods">
+            <img src="./assets/8.png">
+            <p class="title">AirPods</p>
+            <p class="info">All-new with Spatial Audio</p>
+            <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+        </div>
+        <div class="tags">
+            <p class="title">AirTag</p>
+            <a href="#" class="btn learn-more">Learn more <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <p class="info">Lose your knack for loosing things.</p>
+            <img src="./assets/9.png">
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="pro">
+        <div class="links">
+            <ul>
+                <li><a href="#" class="active">Explore</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">AirTag</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="active">Services</a></li>
+                <li><a href="#">Apple Music</a></li>
+                <li><a href="#">Apple Acrade</a></li>
+                <li><a href="#">iCloud</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="active">Account</a></li>
+                <li><a href="#">Manage your Apple ID</a></li>
+                <li><a href="#">iCloud.com</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="active">About Apple</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Apple leadership</a></li>
+                <li><a href="#">Career Opportunities</a></li>
+                <li><a href="#">INvestors</a></li>
+                <li><a href="#">Ethics & Compliance</a></li>
+            </ul>
+        </div>
+        <p class="retail"><a href="#" class="buy">Find a retail</a> near you</p>
+        <hr>
+        <div class="copy">
+            <p class="title">Copyright &copy 2022 Apple Inc. All rights reserved.</p>
+            <P class="terms">Terms of Use | Site Map </P>
+            <p class="country">Nigeria</p>
+        </div>
+    </footer>
+
+    <!--script file -->
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
